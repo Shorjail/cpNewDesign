@@ -1,0 +1,374 @@
+:root{
+
+    --primary-color:#2aaaa9;
+    --menu-bg-color:#f3f3f3;
+    --menu-text-color:#3c4e5a;
+    --primary-text-color:#707070;
+    --secondary-color:#f9706a;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Medium.woff);
+  }
+
+body {
+
+    font-family: Lato;
+}
+a {
+
+    color:var(--primary-text-color);
+}
+.home-body {
+    color: var(--primary-text-color);
+}
+.f10 {
+    font-size: 10px;
+}
+.f11{
+    font-size: 11px;
+}
+.f12 {
+    font-size: 12px;
+}
+.f13 {
+    font-size: 13px;
+}
+.f14 {
+    font-size: 14px;
+}
+.f15 {
+    font-size: 15px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f17 {
+    font-size: 17px;
+}
+.f18 {
+    font-size: 18px;
+}
+.f19 {
+    font-size: 19px;
+}
+.f20 {
+    font-size: 20px;
+}
+.f30 {
+    font-size: 30px;
+}
+.f40 {
+    font-size: 40px;
+}
+.f50{
+    font-size: 50px;
+}
+.colorornge {
+    color: var(--secondary-color);
+}
+.super_container {
+    overflow-x: hidden;
+}
+.bg-primary-color{
+background-color: var(--primary-color) !important;
+}
+
+.bg-menu {
+    background-color: var(--menu-bg-color);
+}
+.bg-green {
+    background-color: #24ae25;
+}
+
+.header {
+
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: Lato;
+}
+.header a.top-item {
+    text-decoration: none;
+    color: white;
+    padding: 5px 0px;
+    font-size: 18px;
+}
+
+.logo img, .header-icons img {
+    height: 65px;
+}
+.header-contact p {
+
+    font-size: 14px;
+    line-height: .3;
+
+}
+.header-contact b {
+    font-size: 22px;
+    font-weight: 400;
+}
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.flexbox-vertical-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+ 
+  }
+.nav-item-name{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+  
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 22px;
+  color:var(--menu-text-color);
+}
+
+.navbar-nav .nav-link.active{
+
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    
+}
+
+.megamenu {
+    position: static;
+}
+
+    .megamenu .dropdown-menu {
+        background: none;
+        border: none;
+        width: 100%;
+        z-index:9999;
+    }
+
+    .megamenu ul.list-unstyled li {
+        padding: 0 0 0 0px;
+        margin: 9px 0;
+        cursor:pointer;
+    }
+
+    .megamenu ul.list-unstyled li {
+        padding: 0 0 0 0px;
+        margin: 9px 0;
+    }
+
+        .megamenu ul.list-unstyled li:hover {
+            background: #30a1a3;
+            line-height: 1;
+            color: #fff;
+        }
+
+        .megamenu ul.list-unstyled li a {
+            padding: 6px !important;
+            line-height: normal;
+        }
+
+            .megamenu ul.list-unstyled li a:hover {
+                padding: 6px !important;
+                line-height: normal;
+                color: var(--menu-hover-text-color) !important;
+                background: var(--menu-hover-color);
+            }
+.nav-item.dropdown .dropdown-menu {
+    left:0;
+}
+
+.home-banner {
+
+    background-image: url(../images/home-banner.jpg);
+    min-height: 600px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.search-panel-container{
+
+    background-color: #fff;
+    color:var(--menu-text-color);
+    min-height: 80px;
+    /* border: 1px solid var(--primary-color); */
+    border-radius: 50px;
+    padding: 10px;
+}
+.search_item{
+    border-right: 1px solid gray;
+    padding-right: 10px;
+    width: 16%;
+}
+.searchdeparture .fa-plane {
+
+    transform: rotate(-45deg);
+}
+.search_item i {
+    color: var(--menu-text-color);
+}
+.search_item select {
+    height: 36px;
+}
+.search_item:nth-last-child(2) {
+
+    border: none;
+    
+}
+.search_item .input-group.mModal::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+.search_item .input-group input {
+    background: transparent;
+}
+.form-control:focus {
+
+    box-shadow: none;
+}
+.megamenu a.menuHeadLink {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.StarIcons5:before {
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "Font Awesome 5 Free";
+}
+.StarIcons4:before {
+    content: "\f005\f005\f005\f005"; 
+    font-family: "Font Awesome 5 Free";
+}
+.StarIcons3:before {
+    content: "\f005\f005\f005";
+    font-family: "Font Awesome 5 Free";
+}
+
+.search-circle{
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.CovidStrip{
+
+    background: #c0fbe7;
+    padding-top: 10px;
+    color: #3c5666;
+}
+
+.CovidTxt {
+    color: #3c5666 !important;
+    display: inline-block;
+    font-weight: 600;
+}
+.CovidStrip a {
+    font-size: 14px;
+    white-space: nowrap;
+    color:#3c5666;
+}
+
+.holiday_icon_sec img.img-fluid {
+    width: 65px !important;
+    margin: auto !important;
+}
+.primary-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 22px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+  
+}
+
+.cp-holiday-card {
+    padding-right: 7px !important;
+    padding-left: 7px !important;
+}
+.cyp_holidays_img{
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.cyp_holidays_box{
+    border: 1px solid #bdbbbb;
+    border-radius: 15px;
+    box-shadow: 1px 4px 1px 0px rgb(0 0 0 / 13%);
+
+}
+.cyp_holidays_content {
+    border-radius: 0px 0px 15px 15px;
+}
+.cp-holiday-card-content {
+    text-transform: uppercase;
+    padding: 10px;
+}
+.cp-holiday-card-content h3 {
+   
+    font-size: 25px;
+}
+
+.curved-border {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #bdbbbb;
+}
+.deals_content_box .deals_content_box_3 {
+ 
+    height: 100%;
+}
+.widget-3 .deals_content_box_2 p span.price2 {
+    line-height: 35px;
+}
+
+.widget-3 .deals_content_box_2 {
+    border-left: 2px solid var(--primary-text-color);
+}
+
+.widget-4 .cp-holiday-card .cp-holiday-card-content h4 {
+    font-size: 20px;
+}
+.cyp_holidays_sec a:hover{
+    color: var(--menu-text-color);
+}
+@media (min-width: 1400px){
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+    .widget-3 .deals_content_box .deals_content_box_2 {
+        padding-top: 16%;
+        padding-left: 20%;
+    }
+    
+}
