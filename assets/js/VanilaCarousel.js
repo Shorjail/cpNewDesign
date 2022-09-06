@@ -1,6 +1,6 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'add', 'next'];
+const galleryControls = ['previous',  'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 class Carousel {
@@ -49,10 +49,17 @@ class Carousel {
 
   // Construct the carousel controls
   setControls() {
+    var controlName ="";
     this.carouselControls.forEach(control => {
       galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
 
-      document.querySelector(`.gallery-controls-${control}`).innerText = control;
+      if(control == 'previous') {
+        controlName = "<";
+      }else if(control=='next'){
+        controlName=">";
+      }
+
+      document.querySelector(`.gallery-controls-${control}`).innerText = controlName;
     });
   }
  

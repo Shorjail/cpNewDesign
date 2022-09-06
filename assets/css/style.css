@@ -357,6 +357,10 @@ background-color: var(--primary-color) !important;
 .cyp_holidays_sec a:hover{
     color: var(--menu-text-color);
 }
+.widget-5 .cyp_holidays {
+
+    margin-bottom: 5rem;
+}
 @media (min-width: 1400px){
 
     .container, .container-lg, .container-md, .container-sm, .container-xl {
