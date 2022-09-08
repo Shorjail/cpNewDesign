@@ -674,7 +674,8 @@ table thead, table tbody {
 .daterangepicker select.monthselect {
     line-height: 1.5;
     height: 40px !important;
-    width: 55% !important;
+    width: 50% !important;
+    margin-right: 3px;
 }
 .daterangepicker select.yearselect {
     line-height: 1.5;
@@ -743,7 +744,7 @@ td.available {
 span.room_heading {
     display: block;
     width: 100%;
-    padding: 15px 10px;
+    padding: 10px 10px;
     background: #dedede85;
     margin: 0 0 15px 0px;
     color: #3c4e5a;
@@ -758,6 +759,11 @@ span.room_heading {
 }
 .roomsChild, .showage {
     display: none;
+}
+.room_heading i, .room_heading h4 {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 0;
 }
 @media only screen and (min-width: 1024px){
     .widget-3 .deals_content_box .deals_content_box_2 {
