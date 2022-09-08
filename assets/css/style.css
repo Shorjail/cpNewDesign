@@ -5,6 +5,7 @@
     --menu-text-color:#3c4e5a;
     --primary-text-color:#707070;
     --secondary-color:#f9706a;
+    --bs-modal-width:'auto';
 }
 
 @font-face {
@@ -20,6 +21,7 @@ a {
 
     color:var(--primary-text-color);
 }
+.w-80 { width: 80% !important;}
 .home-body {
     color: var(--primary-text-color);
 }
@@ -205,11 +207,17 @@ background-color: var(--primary-color) !important;
     /* border: 1px solid var(--primary-color); */
     border-radius: 50px;
     padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.search-panel-container input {
+    font-size: 14px;
 }
 .search_item{
     border-right: 1px solid gray;
     padding-right: 10px;
-    width: 16%;
+    width: 18%;
 }
 .searchdeparture .fa-plane {
 
@@ -361,6 +369,162 @@ background-color: var(--primary-color) !important;
 
     margin-bottom: 5rem;
 }
+.subscription-wrap {
+    display: flex;
+    padding-left: 25%;
+}
+.subscription-button {
+    border-radius: 0 35px 35px 0 ;
+    line-height: 4;
+    padding: 3px 30px ;
+    margin:0;
+   
+}
+ button.subscription-button:hover{
+    box-shadow: none !important;
+}
+.subscription-textbox {
+    line-height: 3;
+    width: 400px;
+    border-radius: 35px 0 0 35px;
+    margin: 0;
+    border:1px solid #707070;
+    border-right: 0;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.subscription-textbox:focus, .subscription-textbox:active{
+    outline: none;
+}
+
+.lower-banner {
+    background-image: url(../images/home-lower-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.lower-banner .inner-block {
+
+padding: 12% 0;
+    
+}
+.lower-banner .quote-block {
+ background-color: #075555;
+ width: fit-content;
+ border-radius: 40px;
+ padding: 35px;
+ color:#fff;
+ max-width: 560px;
+}
+.lower-banner .quote-block svg {
+
+    width: 50px;
+    display: block;
+    color: #707070;
+
+}
+.lower-banner .quote-block .stars{
+
+    color: #ffaa0a;
+    font-size: 16px;
+}
+
+.social-widget {
+    background-color: #deffff;
+}
+
+.social-widget li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 25px 0;
+    transition: all .2s ease-in-out;
+    width:20%;
+}
+.social-widget a:hover {
+    color: var(--primary-text-color);
+}
+
+.widget-9 .primary-button {
+    line-height: 2;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.widget-9 img {
+    border-radius: 40px;
+}
+
+
+
+a.primary-button:hover, button.primary-button:hover {
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 0 0.40883rem rgb(0 0 0 / 10%);
+
+}
+
+.widget-10 .nav-tabs{
+    border-bottom: none;
+}
+
+
+.widget-10 .nav-pills .nav-item .nav-link {
+    background-color: var(--primary-color);
+    line-height: 2;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    
+}
+
+#full-collection-widget h4{
+font-size: 18px;
+
+}
+#full-collection-widget li 
+{
+    width: 33%;
+    display: inline-block;
+}
+#full-collection-widget li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+#full-collection-widget li a:hover {
+    text-decoration: underline;
+}
+footer {
+
+    background-color: #004343;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer table td{
+    color: #fff;
+}
+footer table thead, 
+footer table tbody, 
+footer table tfoot, 
+footer table tr, 
+footer table td, 
+footer table th {
+    border-style: none;
+}
+
+footer .table > :not(caption) > * > *{
+
+    padding: 0;
+}
 @media (min-width: 1400px){
 
     .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -368,7 +532,233 @@ background-color: var(--primary-color) !important;
     }
 }
 
+/* .search-modals .modal 
+{
+    
+    width: var(--bs-modal-width);
+} */
+.searchTabModal {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 360px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 11px;
+    background: #fff;
+    z-index: 9997;
+}
+.custom-control {
+    color: #3c4e5a !important;
+    position: relative;
+    display: block;
+    min-height: 3.0rem;
+    padding-left: 1.5rem;
+}
 
+.custom-control.overflow-checkbox {
+    --color: #26a69a;
+    padding-bottom: 0.5rem;
+    padding-top: 0.4rem;
+}
+
+.custom-control.overflow-checkbox .overflow-control-indicator {
+    border-radius: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 19px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--primary-color);
+}
+.overflow-control-description {
+    padding-left: 0.8rem;
+    font-size: 16px;
+    color: #3c4e5a !important;
+}
+.custom-control.overflow-checkbox .overflow-control-indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    transition: 0.3s;
+    width: 10px;
+    border-right: 7px solid #fff;
+    border-radius: 3px;
+    transform: rotateZ(45deg) scale(1);
+    top: -10px;
+    left: 15px;
+    opacity: 0;
+}
+.custom-control.overflow-checkbox .overflow-control-indicator::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    transition: 0.3s;
+    transform: rotateZ(90deg) scale(0);
+    width: 11px;
+    border-bottom: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+    border-radius: 3px;
+    top: -2px;
+    left: 2px;
+}
+
+.custom-control.overflow-checkbox .overflow-control-input:checked ~ .overflow-control-indicator::after {
+    transform: rotateZ(45deg) scale(1);
+    top: -9px;
+    left: 11px;
+    color: #3c4e5a !important;
+}
+.custom-control.overflow-checkbox .overflow-control-input:checked ~ .overflow-control-indicator::before {
+    opacity: 1;
+}
+.custom-control.overflow-checkbox input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.RegionEnd {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 7px;
+}
+input.form-control, select.form-control, .form-control select, .form-control input {
+    border-radius: 0;
+    display: block;
+    width: 100%;
+   
+    font-weight: 500;
+    color: #3c4e5a;
+ 
+}
+.basic-addon1 {
+    color: #3c4e5a !important;
+    height: -webkit-fill-available;
+    border: none;
+    text-transform: none;
+    cursor: pointer;
+    position: relative;
+    right: 1px;
+}
+.input-group-prepend input.form-control {
+    width: 85%;
+    border: none;
+    background-color: transparent;
+    padding-left:0;
+    padding-right: 0;
+}
+.daterangepicker {
+    display: contents !important;
+    font-size: 12px;
+}
+.table-condensed {
+    border-spacing: 3px !important;
+    border-collapse: separate !important;
+    width:80%;
+}
+table thead, table tbody {
+    width: 100% !important;
+    /* display: table; */
+}
+
+.daterangepicker th.month {
+    width: auto;
+    font-size: x-large !important;
+    padding: 10px 35px;
+    color: #3c4e5a;
+}
+.daterangepicker select.monthselect {
+    line-height: 1.5;
+    height: 40px !important;
+    width: 55% !important;
+}
+.daterangepicker select.yearselect {
+    line-height: 1.5;
+    height: 40px !important;
+    width: 45% !important;
+}
+.daterangepicker td.disabled, .daterangepicker option.disabled {
+    /* padding: 12px !important; */
+    padding: 6px 3px;
+    text-decoration: none !important;
+    text-align: center;
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+    background-color: #f6f6f6 !important;
+    border-color: transparent;
+    color: #999 !important;
+    border: none !important;
+}
+.daterangepicker td {
+
+    width: 14.1%;
+}
+
+td.available {
+    font-size: larger;
+    padding: 12px;
+    text-align: center;
+    /* padding: 6px 3px; */
+    color: #3c4e5a;
+    border: 1px solid var(--primary-color) !important;
+    border-radius: 8px;
+}
+.daterangepicker td.active {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.daterangepicker select.monthselect, .daterangepicker select.yearselect {
+    font-size: 12px;
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+    border-radius: 8px;
+}
+.drp-buttons {
+    display: none;
+}
+
+#Duration option {
+    font-size: 14px;
+}
+#SearchForm .input-group input, #SearchForm .searchDuration select, #SearchForm .input-group i ,#SearchForm .searchDuration i, #RegionModal i {
+    color: var(--primary-text-color) !important;
+}
+
+.alertsRoom {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 0;
+    color: #fff;
+    background-color: #f9706a;
+    display: none;
+    padding: 10px;
+}
+
+span.room_heading {
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    background: #dedede85;
+    margin: 0 0 15px 0px;
+    color: #3c4e5a;
+}
+.roomsChild div.form-group {
+    margin-left: 20px;
+    display: inline-block;
+}
+.roomsChild div.form-group select {
+    width: 75px;
+    display: block;
+}
+.roomsChild, .showage {
+    display: none;
+}
 @media only screen and (min-width: 1024px){
     .widget-3 .deals_content_box .deals_content_box_2 {
         padding-top: 16%;
