@@ -341,6 +341,11 @@ $("#searchFormSubmit").click(function (e) {
                 open_modal('filterCalendarModal');
                 $('.calcalcal').click();
             });
+            $('.searchDate .search-right .fa-chevron-down').click(function () {
+                $('#departCal').click();
+                open_modal('filterCalendarModal');
+                $('.calcalcal').click();
+            });
 
 
         }

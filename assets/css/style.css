@@ -59,6 +59,15 @@ a {
 .w-auto {
     width: auto !important;
 }
+.w-fit-content {
+    width: fit-content !important;
+}
+.w-max-content {
+    width:max-content !important;
+}
+.w-min-content {
+    width: min-content !important;
+}
 /**************************/
 
 .home-body {
@@ -96,6 +105,9 @@ a {
 }
 .f20 {
     font-size: 20px;
+}
+.f25 {
+    font-size: 25px;
 }
 .f30 {
     font-size: 30px;
@@ -409,13 +421,16 @@ background-color: var(--primary-color) !important;
 .cyp_holidays_sec a:hover{
     color: var(--menu-text-color);
 }
-.widget-5 .cyp_holidays {
+.hotel-deals .cyp_holidays {
 
     margin-bottom: 5rem;
 }
+.hotel-deals {
+    overflow: hidden;
+}
 .subscription-wrap {
     display: flex;
-    padding-left: 25%;
+  
 }
 .subscription-button {
     border-radius: 0 35px 35px 0 ;
@@ -453,16 +468,18 @@ padding: 12% 0;
     
 }
 .lower-banner .quote-block {
- background-color: #075555;
+ background-color: rgba(7, 85, 85,1);
  width: fit-content;
  border-radius: 40px;
- padding: 35px;
+ padding: 10px 35px 0px 35px;
  color:#fff;
  max-width: 560px;
+ overflow-x:hidden ;
 }
 .lower-banner .quote-block svg {
 
     width: 50px;
+    height: 50px;
     display: block;
     color: #707070;
 
@@ -472,6 +489,19 @@ padding: 12% 0;
     color: #ffaa0a;
     font-size: 16px;
 }
+.lower-banner .quote-block .quote-content {
+    padding-bottom: 10px;
+}
+.lower-banner .quote-block .quote-content p {
+    padding-bottom: 15px;
+}
+.lower-banner .quote-block .quote-border {
+    background-color: var(--primary-color);
+    width:70%;
+    height: 5px;
+    margin-left: -8px;
+    transform:perspective(10px) rotateX(-5deg);
+}
 
 .social-widget {
     background-color: #deffff;
@@ -480,12 +510,20 @@ padding: 12% 0;
 .social-widget li {
     display: inline-block;
     font-size: 30px;
-    padding: 25px 0;
+    padding: 0;
     transition: all .2s ease-in-out;
-    width:20%;
+    width:22%;
+}
+.social-widget .text-content {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 0;
 }
 .social-widget a:hover {
     color: var(--primary-text-color);
+}
+.social-widget li i {
+    color: #87aeae;
 }
 
 .widget-9 .primary-button {
@@ -826,7 +864,7 @@ span.room_heading {
     border:1px solid #fff;
     border-radius: 20px;
 }
-li.nav-item {
+#navbarContent li.nav-item {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
@@ -834,9 +872,74 @@ li.nav-item {
     border-radius: 0 30px 30px 0;
     padding: 24px 8px;
     margin: 0;
+    font-weight: 400;
 }
 
+#CalSpan{
+    margin-right: 1px;
+  }
 
+  .owl-prev {
+   
+    height: 100px;
+    position: absolute;
+    top: 15%;
+    margin-left: -20px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+   
+    height: 100px;
+    position: absolute;
+   
+    top: 15%;
+    right: 9px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i { color: var(--primary-text-color);}
+.owl-theme .owl-nav [class*='owl-']{
+    font-size: 30px !important;
+}
+
+.holiday-pack .cyp_holidays_sec .owl-prev, .holiday-pack .cyp_holidays_sec .owl-next {
+    top: 40%;
+    height: 60px;
+    background: rgba(255,255,255,0.7) !important;
+}
+
+.holiday-pack .cyp_holidays_sec .owl-prev i, .holiday-pack .cyp_holidays_sec .owl-next i{
+    color:#000;
+}
+.holiday-pack .cyp_holidays_sec .owl-next {
+    right: 0;
+}
+.holiday-pack .cyp_holidays_sec .owl-theme .owl-nav [class*='owl-'] {
+
+    padding: 13px 18px;
+    margin: 0;
+    border-radius: 15px;
+
+}
+.cyp_holidays_sec.no-card .owl-prev, .holiday-pack .cyp_holidays_sec.no-card .owl-next {
+    top: 27%;
+   
+}
+.region-deals .cyp_holidays_sec.no-card .owl-prev, .region-deals .cyp_holidays_sec.no-card .owl-next {
+    top: 30%;
+   
+}
+
+/* .quote-border:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 80px solid white;
+    border-left: 80px solid red;
+    width: 0;
+} */
 @media only screen and (min-width: 1024px){
     .widget-3 .deals_content_box .deals_content_box_2 {
         padding-top: 16%;

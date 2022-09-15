@@ -21,7 +21,7 @@
     <div class="super-container">
         
         <header class="header">
-            <div class="bg-darkgreen d-lg-none py-2">
+            <div class="bg-darkgreen d-md-none py-2">
                 <span class="d-inline ps-1"><a class="top-item border-bottom" href="#">CyprusParadise</a></span>
                 <span class="d-inline ps-1"><a href="https://TurkeyParadise.com" class="top-item">TurkeyParadise</a></span>
                 <span class="d-inline ps-1"><a href="https://MaltaParadise.com" class="top-item">MaltaParadise</a></span>
@@ -29,7 +29,7 @@
                 
             </div>
             <div class="container">
-                <div class="row py-lg-3 d-none d-lg-block">
+                <div class="row py-md-3 d-none d-md-block">
 
                     <div class="col-md-12 col-lg-8 col-12 mx-auto text-center text-md-start">
                         <div class="row">
@@ -63,7 +63,7 @@
                         <span class="navbar-toggler-icon"></span>
                           </button>
                     </div>
-                    <div class="col-md-6 col-6 d-none d-md-block">
+                    <div class="col-md-6 col-6 d-none d-lg-block">
                         <div class="header-contact float-end position-relative vertical-center">
                             <p class="m-0">Call our experts on</p>
                             <b>0345 512 0777</b>
@@ -71,7 +71,7 @@
                         </div>
 
                     </div>
-                    <div class="col-md-2 col-6 d-none d-md-block">
+                    <div class="col-md-2 col-6 d-none d-lg-block">
                         <a href="#" class="header-icons">
                             <img class="img-fluid"
                                 src="assets/images/29-years-holiday-experience-cyprus-paradise.svg" />
@@ -516,7 +516,8 @@
                                         
                                     </div>
                                     <div class="search-right d-lg-none">
-                                        <button class="primary-button mob-search-item-btn float-end type="button">See List</button>
+                                        <a class="primary-button mob-search-item-btn float-end type="button"
+                                        onclick="open_modal('filterDepartureModalPackage', 'searchTabEnd')">See List</a>
                                     </div>
 
                                 </div>
@@ -543,7 +544,8 @@
                                         </div>
                                     </div>
                                     <div class="search-right d-lg-none">
-                                        <button class="primary-button mob-search-item-btn float-end type="button">See List</button>
+                                        <a class="primary-button mob-search-item-btn float-end type="button"
+                                        onclick="open_modal('filterRegionModal', 'searchTabEnd')">See List</a>
                                     </div>
 
                                 </div>
@@ -571,7 +573,7 @@
 
                                     </div>
                                     <div class="search-right d-lg-none ps-0">
-                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <i class="fa-solid fa-chevron-down" onclick="open_modal('filterCalendarModal', 'searchTabEnd')"></i>
                                     </div>
                                 </div>
                                 
@@ -647,7 +649,8 @@
                                         </div>
                                     </div>
                                     <div class="search-right d-lg-none">
-                                        <button class="primary-button mob-search-item-btn float-end type="button">Change</button>
+                                        <a class="primary-button mob-search-item-btn float-end type="button"
+                                        onclick="open_modal('filterRoomsModal', 'searchTabEnd')">Change</a>
                                     </div>
                                 </div>
                                 
@@ -682,11 +685,11 @@
             </section>
 
 
-            <div class="container widget-1">
+            <div class="container widget-1 infobox-icons">
                 <div class="sec_1" style="padding-top: 10px;">
 
-                    <div class="your_holiday text-center colorgrey f30 mt-4">
-                        <h2 class="infoSectionHeading">Cyprus Holidays - Relax . . . Your Holiday is Safe with Us</h2>
+                    <div class="your_holiday text-center colorgrey mt-4">
+                        <h1 class="f25 f-md-30">Cyprus Holidays - Relax . . . Your Holiday is Safe with Us</h1>
 
                         <p class="sectionIntro f22 mt-2"></p>
                     </div>
@@ -749,17 +752,77 @@
                 </div>
             </div>
 
-            <div class="container widget-2">
-                <div class="container">
+            <div class="container widget-2 holiday-pack widget-boxes-3">
+                <div class="">
 
-                    <div class="cyp_holidays text-center f30 mt-4">
-                        <h1 class="f40"> UNBEATABLE NORTH CYPRUS HOLIDAYS</h1>
+                    <div class="cyp_holidays text-center mt-4">
+                        <h1 class="f25 f-md-30 "> UNBEATABLE NORTH CYPRUS HOLIDAYS</h1>
                         <p class="f18 mt-3"> We are proud to announce the launch of Turkey &amp; Malta
                             holidays in addition to Cyprus! Offering the same high-quality service, great value for
                             money &amp; wide variety of hand-picked hotels that you have come to expect from our brands.
                             Welcome to Paradise... now in Turkey &amp; Malta!</p>
                     </div>
-                    <div class="cyp_holidays_sec mb-0 mb-md-5">
+                    <div class="cyp_holidays_sec mb-0 mb-md-5 d-md-none">
+                        <div class="owl-carousel owl-theme">
+                            <div class="cyp_holidays_box mt-4">
+                                <div class="cyp_holidays_img">
+                                    <img src="assets/images/summerholiday.jpg" class="img-fluid">
+                                </div>
+                                <div class="cp-holiday-card-content color-grey pt-2">
+                                    <h3><strong>summer 2023</strong></h3>
+                                    <h5>Holidays on Sale</h5>
+                                    <p>Plan Ahead &amp; and Book Now</p>
+
+                                </div>
+                                <div class="cyp_holidays_content_link mb-4 text-center ">
+                                    <a href="#" class="text-uppercase primary-button">
+                                        Take me there
+                                        <i class="fa fa-angle-right ml-3" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cyp_holidays_box mt-4">
+                                <div class="cyp_holidays_img">
+                                    <img src="assets/images/winterSun.jpg" class="img-fluid">
+                                </div>
+                                <div class="cp-holiday-card-content color-grey pt-2">
+                                    <h3><strong>Winter Sun</strong></h3>
+                                    <h5>Holidays 2022</h5>
+                                    <p>UNBEATABLE LAST MINUTE DEAL</p>
+
+                                </div>
+                                <div class="cyp_holidays_content_link mb-4 text-center ">
+                                    <a href="#" class="text-uppercase primary-button">
+                                        Take me there
+                                        <i class="fa fa-angle-right ml-3" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="cyp_holidays_box mt-4">
+                                <div class="cyp_holidays_img">
+                                    <img src="assets/images/BookConfident.jpg" class="img-fluid">
+                                </div>
+                                <div class="cp-holiday-card-content color-grey pt-2">
+                                    <h3><strong>Super Summer</strong></h3>
+                                    <h5>sale</h5>
+                                    <p>with award-winning turkish airlines</p>
+
+                                </div>
+                                <div class="cyp_holidays_content_link mb-4 text-center ">
+                                    <a href="#" class="text-uppercase primary-button">
+                                        Take me there
+                                        <i class="fa fa-angle-right ml-3" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="cyp_holidays_sec mb-0 mb-md-5 d-none d-md-block">
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 cp-holiday-card">
                                 <div class="cyp_holidays_box mt-4">
@@ -824,18 +887,75 @@
                 </div>
             </div>
 
-            <div class="container widget-2">
+            <div class="container widget-2 holiday-pack widget-boxes-3">
                 <div class="container">
 
-                    <div class="cyp_holidays text-center f30 mt-4">
-                        <h1 class="f40"> UNBEATABLE NORTH CYPRUS HOLIDAYS</h1>
+                    <div class="cyp_holidays text-center mt-4">
+                        <h1 class="f25 f-md-30"> UNBEATABLE NORTH CYPRUS HOLIDAYS</h1>
                         <p class="f18 mt-3"> We are proud to announce the launch of Turkey &amp; Malta
                             holidays in addition to Cyprus! Offering the same high-quality service, great value for
                             money &amp; wide variety of hand-picked hotels that you have come to expect from our brands.
                             Welcome to Paradise... now in Turkey &amp; Malta!</p>
                     </div>
-                    <div class="cyp_holidays_sec mb-0 mb-md-5">
-                        <div class="row">
+                    <div class="cyp_holidays_sec mb-0 mb-md-5 no-card">
+                        <div class="owl-carousel owl-theme  d-md-none d-block">
+                            <div class=" mt-4">
+                                <div class="curved-border">
+                                    <img src="assets/images/summerholiday.jpg" class="img-fluid">
+                                </div>
+                                <div class="cp-holiday-card-content color-grey pt-2">
+                                    <h3><strong>summer 2023</strong></h3>
+                                    <h5>Holidays on Sale</h5>
+                                    <p>Plan Ahead &amp; and Book Now</p>
+
+                                </div>
+                                <div class="cyp_holidays_content_link mb-4 text-center ">
+                                    <a href="#" class="text-uppercase primary-button w-100">
+                                        Take me there
+                                        <i class="fa fa-angle-right ml-3" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <div class="curved-border">
+                                    <img src="assets/images/winterSun.jpg" class="img-fluid">
+                                </div>
+                                <div class="cp-holiday-card-content color-grey pt-2">
+                                    <h3><strong>Winter Sun</strong></h3>
+                                    <h5>Holidays 2022</h5>
+                                    <p>UNBEATABLE LAST MINUTE DEAL</p>
+
+                                </div>
+                                <div class="cyp_holidays_content_link mb-4 text-center ">
+                                    <a href="#" class="text-uppercase primary-button w-100">
+                                        Take me there
+                                        <i class="fa fa-angle-right ml-3" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <div class="curved-border">
+                                    <img src="assets/images/BookConfident.jpg" class="img-fluid">
+                                </div>
+                                <div class="cp-holiday-card-content color-grey pt-2">
+                                    <h3><strong>Super Summer</strong></h3>
+                                    <h5>sale</h5>
+                                    <p>with award-winning turkish airlines</p>
+
+                                </div>
+                                <div class="cyp_holidays_content_link mb-4 text-center ">
+                                    <a href="#" class="text-uppercase primary-button w-100">
+                                        Take me there
+                                        <i class="fa fa-angle-right ml-3" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row d-none d-md-flex">
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 cp-holiday-card">
                                 <div class=" mt-4">
                                     <div class="curved-border">
@@ -899,9 +1019,9 @@
                 </div>
             </div>
 
-            <div class="container widget-3">
+            <div class="container widget-3 offer-banner">
                 <div class="deals text-center colorgrey f30">
-                    <h2>DEAL OF THE WEEK</h2>
+                    <h1 class="f25 f-md-30">DEAL OF THE WEEK</h1>
                     <p class="f20 colorgrey mt-3"> Below you'll find this week's holiday deal. Don't miss out on the
                         special offers - book now before it's too late!</p>
                 </div>
@@ -909,17 +1029,19 @@
                     data-holiday="{&quot;Hotel&quot;:null,&quot;StartDate&quot;:&quot;09/01/2022 00:00:00&quot;,&quot;EndDate&quot;:&quot;09/30/2022 00:00:00&quot;,&quot;Duration&quot;:&quot;7&quot;,&quot;NumberOfAdults&quot;:&quot;2&quot;,&quot;PricePerPerson&quot;:null,&quot;NumberOfChildren&quot;:&quot;0&quot;,&quot;ProductCode&quot;:&quot;PARA&quot;,&quot;Images&quot;:null,&quot;OffPercentage&quot;:null,&quot;FlightIncluded&quot;:null,&quot;AddedValues&quot;:null,&quot;ExtraInfo&quot;:null,&quot;OfferTitle&quot;:null,&quot;DepartureAirport&quot;:&quot;LON&quot;,&quot;BoardBasisBannerText&quot;:&quot;&quot;,&quot;BoardBasisBannerIcon&quot;:&quot;&quot;,&quot;BoardBasisBannerLabel&quot;:null,&quot;AirlineCode&quot;:&quot;&quot;,&quot;ArrivalAirport&quot;:null,&quot;TargetUrl&quot;:null,&quot;CustomTargetPage&quot;:null,&quot;CustomExternalUrl&quot;:null,&quot;DepartingAirport&quot;:null,&quot;WasPrice&quot;:null,&quot;OfferDate&quot;:null,&quot;LeadPrice&quot;:null,&quot;Index&quot;:0,&quot;ButtonText&quot;:null,&quot;BOArrivalAirport&quot;:null}"
                     data-product-code="PARA" data-bookingholiday="TRUE">
                     <div class="deals_image">
-                        <img class="lazy img-fluid" alt=""
+                        <img class="lazy img-fluid d-none d-md-block alt=""
                             src="assets/images/kaya-palazzo-resort-home-page-banner.webp">
+                            <img class="lazy img-fluid d-md-none" alt=""
+                            src="assets/images/kaya-palazzo-resort-home-page-banner-mob.jpg">
                     </div>
                     <div class="deals_content_box bg-white">
                         <div class="row">
-                            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                            <div class="col-12 col-md-7 col-lg-7">
                                 <div class="deals_content_box_1 px-3 py-2">
                                     <h3 class="text-left my-2"><a
                                             href="/hotels/kaya-palazzo-resort/?ProductCode=PARA&amp;Depart=LON&amp;Arrival=&amp;Resort=Kyrenia&amp;Departure=2022-09-29&amp;Duration=7&amp;CheckIn=2022-09-29&amp;CheckOut=2022-10-06&amp;AccommodationExternalId=HOT0000950&amp;Airline=&amp;Rooms=1&amp;R1=2"
                                             class="font-weight-bold f25 text-decoration-none">
-                                            <h3>5* LUXURY BEACHFRONT HOLIDAY</h3>
+                                            <h3><strong>5* LUXURY BEACHFRONT HOLIDAY</strong></h3>
                                         </a>
                                     </h3>
                                     <p class="colorgrey f15"> Including 7 Nights’ Accommodation w/Return Flights,
@@ -928,25 +1050,28 @@
                                         many more extras…</p>
                                 </div>
                             </div>
-                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 my-auto">
-                                <div class="deals_content_box_2 py-md-0">
-                                    <p class="colorgrey f20" id="priceBlockHOT0000950">
+                            <div class="col-6 col-md-3 col-lg-3 my-auto pe-0">
+                                <div class="deals_content_box_2 py-md-0 text-center text-lg-start">
+                                    <p class="colorgrey f20 mb-1" id="priceBlockHOT0000950">
                                         7nts from
-                                        <span class="price2 colorornge f40 d-md-block"> £<strong
-                                                class="font-weight-bold f50"
-                                                id="holidayPricePerPersonHOT0000950">991</strong></span>
-                                        per person
+                                        
                                     </p>
-                                    <div class="col=12 px-0 d-md-none d-block mt-2 pt-3"
+                                    <p class="mb-0">
+                                        <span class="price2 colorornge f40 d-md-block"> £<strong
+                                        class="font-weight-bold f50"
+                                        id="holidayPricePerPersonHOT0000950">991</strong></span>
+                                  </p>
+                                  <p class="mb-0">per person</p>
+                                    <div class="col=12 px-0 d-none mt-2 pt-3"
                                         onclick="if (!window.__cfRLUnblockHandlers) return false; window.location= '/hotels/kaya-palazzo-resort/?ProductCode=PARA&amp;Depart=LON&amp;Arrival=&amp;Resort=Kyrenia&amp;Departure=2022-09-29&amp;Duration=7&amp;CheckIn=2022-09-29&amp;CheckOut=2022-10-06&amp;AccommodationExternalId=HOT0000950&amp;Airline=&amp;Rooms=1&amp;R1=2' ">
-                                        <div class="deals_content_box_3 bg-green text-center">
+                                        <div class="deals_content_box_3 bg-primary-color text-center">
                                             <a href="/hotels/kaya-palazzo-resort/?ProductCode=PARA&amp;Depart=LON&amp;Arrival=&amp;Resort=Kyrenia&amp;Departure=2022-09-29&amp;Duration=7&amp;CheckIn=2022-09-29&amp;CheckOut=2022-10-06&amp;AccommodationExternalId=HOT0000950&amp;Airline=&amp;Rooms=1&amp;R1=2"
-                                                class="f50 text-white"><i class="fa-solid fa-angle-right"></i>></a>
+                                                class="f50 text-white"><i class="fa-solid fa-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 px-0 d-none d-md-block"
+                            <div class="col-6 col-md-2 col-lg-2 px-0 "
                                 onclick="if (!window.__cfRLUnblockHandlers) return false; window.location= '/hotels/kaya-palazzo-resort/?ProductCode=PARA&amp;Depart=LON&amp;Arrival=&amp;Resort=Kyrenia&amp;Departure=2022-09-29&amp;Duration=7&amp;CheckIn=2022-09-29&amp;CheckOut=2022-10-06&amp;AccommodationExternalId=HOT0000950&amp;Airline=&amp;Rooms=1&amp;R1=2' "
                                 style="left: -15px;">
                                 <div class="deals_content_box_3 bg-primary-color text-center">
@@ -1033,15 +1158,71 @@
                
             </div> -->
 
-            <div class="container widget-4">
+            <div class="container widget-4 holiday-pack region-deals">
 
-                <div class="cyp_holidays text-center f30 mt-4">
-                    <h1 class="f40"> Cyprus Holidays by Region with Cyprus Paradise</h1>
+                <div class="cyp_holidays text-center mt-4">
+                    <h1 class="f25 f-md-30"> Cyprus Holidays by Region with Cyprus Paradise</h1>
                     <p class="f18 mt-3">Popular Cyprus holidays from our hand-picked collection of Northern Cyprus
                         regions including; Famagusta, Bellapais, Kyrenia & Bafra</p>
                 </div>
-                <div class="cyp_holidays_sec mb-0 mb-md-5">
-                    <div class="row">
+                <div class="cyp_holidays_sec mb-0 mb-md-5 no-card d-md-none">
+                    <div class="owl-carousel owl-theme">
+                        <a href="/holiday-type/famagusta-holidays/" class="text-decoration-none">
+                                <div class="mt-4">
+                                    <div class="curved-border">
+                                        <img src="assets/images/famagusta_hp.webp" class="img-fluid">
+                                    </div>
+                                    <div class="cp-holiday-card-content color-grey pt-2">
+                                        <h4><strong>Famagusta Holidays</strong></h3>
+                                            <p>With long sandy beaches and grand resorts,
+                                                Famagusta in the east of Cyprus is a popular choice.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/holiday-type/kyrenia-holidays/" class="text-decoration-none">
+                                <div class="mt-4">
+                                    <div class="curved-border">
+                                        <img src="assets/images/kyrenia_hp.webp" class="img-fluid">
+                                    </div>
+                                    <div class="cp-holiday-card-content color-grey pt-2">
+                                        <h4><strong> Kyrenia Holidays</strong></h3>
+                                            <p>Kyrenia offers a charming harbour, seafront
+                                                restaurants and bars and unique atmosphere.</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/holiday-type/bellapais-holidays/" class="text-decoration-none">
+                                <div class="mt-4">
+                                    <div class="curved-border">
+                                        <img src="assets/images/bellapais-holidays-kyrenia-northern-cyprus.webp"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="cp-holiday-card-content color-grey pt-2">
+                                        <h4><strong> Bellapais Holidays</strong></h3>
+                                            <p>Experience the charm and elegance of Bellapais
+                                                Village with our selection of Bellapais hotels</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/holiday-type/bafra-holidays/" class="text-decoration-none">
+                                <div class="mt-4">
+                                    <div class="curved-border">
+                                        <img src="assets/images/barfa-home-page-banner.webp" class="img-fluid">
+                                    </div>
+                                    <div class="cp-holiday-card-content color-grey pt-2">
+                                        <h4><strong> Bafra Holidays</strong></h3>
+                                            <p>Bafra presents an unparalleled opportunity to
+                                                experience the countryside and the stunning beaches of Cyprus.</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                    </div>
+                </div>
+                <div class="cyp_holidays_sec mb-0 mb-md-5 no-card">
+                    
+
+                    <div class="row d-md-flex d-none">
 
                         <div class="col-12 col-md-3 cp-holiday-card">
                             <a href="/holiday-type/famagusta-holidays/" class="text-decoration-none">
@@ -1108,15 +1289,15 @@
 
             </div>
 
-            <div class="container widget-5">
+            <div class="container widget-5 hotel-deals">
 
                 <div class="cyp_holidays text-center f30 ">
-                    <h1 class="f40"> Cyprus Hotels by Holiday Type</h1>
+                    <h1 class="f25 f-md-30"> Cyprus Hotels by Holiday Type</h1>
                     <p class="f18 mt-3">Looking for all inclusive hotels in Bafra, a boutique hotel in Kyrenia, or a
                         beach holiday in Famagusta? We have a hand-picked collection of
                         Cyprus holidays to suit you:</p>
                 </div>
-                <div class="gallery d-none">
+                <div class="gallery d-none d-md-block">
                     <div class="gallery-container">
                         <div class="gallery-item gallery-item-1" data-index="1">
                             <img src="assets/images/Vanila/01.jpg">
@@ -1182,19 +1363,15 @@
                 </div>
             </div>
 
-            <div class="container widget-6">
+            <div class="container widget-6 email-subscription">
                 <div class="row">
                     <div class="col-12">
-                        <div class="cyp_holidays text-center f30 ">
-                            <h3> Sign up for exclusive offers on Cyprus holidays by email!</h1>
+                        <div class="cyp_holidays text-center ">
+                            <h1 class="f25 f-md-30"> Sign up for exclusive offers on Cyprus holidays by email!</h1>
                         </div>
                     </div>
-
-                    <div class="col-4"></div>
-                    <div class="col">
-
-                    </div>
-                    <div class="subscription-wrap pb-3">
+                </div>
+                    <div class="subscription-wrap w-max-content mx-auto pb-3">
                         <input type="text" name="subscription" class="subscription-textbox pl-2"
                             placeholder="Enter Email Address" />
                         <button type="submit" class="primary-button subscription-button">Sign Up</button>
@@ -1203,13 +1380,10 @@
                 </div>
 
 
-
-            </div>
-
-            <div class="lower-banner widget-7">
+            <div class="lower-banner widget-7 star-review">
                 <div class="inner-block container">
                     <div class="quote-block">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             class="bi bi-quote" viewBox="0 0 16 16">
                             <path
                                 d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
@@ -1229,7 +1403,9 @@
 
 
                         </div>
+                        <div class="quote-border"></div>
                     </div>
+                    
                 </div>
 
             </div>
@@ -1238,7 +1414,7 @@
 
                 <div class="container widget-8 social-widget">
                     <div class="row py-md-3">
-                        <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4 col-xl-3 my-lg-auto">
+                        <div class="col-lg-3 col-12 my-lg-auto order-lg-0 order-1">
                             <div class="soical_icons d-lg-block d-md-none d-block">
                                 <ul class="my-0">
                                     <li>
@@ -1263,33 +1439,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="soical_icons d-md-block d-lg-none d-none ">
-                                <ul class="row">
-                                    <li class="col-3">
-                                        <a href="https://www.facebook.com/CyprusParadise/" target="_blank">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li class="col-3">
-                                        <a href="https://www.instagram.com/cyprusparadise/" target="_blank">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li class="col-3">
-                                        <a href="https://twitter.com/cyprus_paradise" target="_blank">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li class="col-3">
-                                        <a href="https://www.youtube.com/user/NorthCyprusParadise" target="_blank">
-                                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                           
                         </div>
-                        <div class="col-xs-9 col-sm-9 col-md-8 col-lg-8  col-xl-9 my-md-auto mb-2">
-                            <p class="colorgrey f20 mt-0">Follow us to get inspired and learn about the wonders that a
+                        <div class="col-lg-9 col-12 my-md-auto mb-2 order-lg-1 order-0">
+                            <p class="colorgrey mt-0 text-content">Follow us to get inspired and learn about the wonders that a
                                 Cyprus
                                 holiday has to offer.</p>
                         </div>
@@ -1297,16 +1450,41 @@
                 </div>
             </div>
 
-            <div class="container widget-9">
+            <div class="container widget-9 new-destinations holiday-pack">
                 <div class="cyp_holidays text-center f30 mt-4">
-                    <h1 class="f40"> NEW HOLIDAY DESTINATIONS FOR 2022</h1>
+                    <h1 class="f25 f-md-30"> NEW HOLIDAY DESTINATIONS FOR 2022</h1>
                     <p class="f18 mt-3">We are proud to launch our brand new websites Turkey Paradise & Malta Paradise!
                         Offering the same high-quality service, great value for
                         money & wide variety of hand-picked hotels that you have come to expect from our brands. Welcome
                         to Paradise… now in Turkey & Malta</p>
                 </div>
 
-                <div class="row">
+                <div class="cyp_holidays_sec mb-0 mb-md-5 no-card d-md-none">
+                    <div class="owl-carousel owl-theme">
+                        <div class="destination-item">
+                            <img class="img-fluid" src="assets/images/visitMalta.JPG" />
+                            <div class="cyp_holidays_content_link mb-4 mt-2 text-center ">
+                                <a href="#" class="text-uppercase primary-button w-100">
+                                    <strong>Take me there</strong>
+    
+                                    <!-- <i class="fa fa-angle-right ml-3" aria-hidden="true"></i> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="destination-item">
+                            <img class="img-fluid" src="assets/images/VisitTurkey.JPG" />
+                            <div class="cyp_holidays_content_link mb-4 text-center mt-2">
+                                <a href="#" class="text-uppercase primary-button w-100">
+                                    <strong>Take me there</strong>
+                                    <!-- <i class="fa fa-angle-right ml-3" aria-hidden="true"></i> -->
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row d-none d-md-flex">
                     <div class="col-md-6 col-12">
                         <img class="img-fluid" src="assets/images/visitMalta.JPG" />
                         <div class="cyp_holidays_content_link mb-4 mt-2 text-center ">
@@ -1330,9 +1508,9 @@
                 </div>
             </div>
 
-            <div class="container widget-10">
+            <div class="container widget-10 infobox-tabs ">
                 <div class="cyp_holidays text-center f30 mt-4">
-                    <h1 class="f40"> View Our Full Collection of Cyprus Hotels and Accommodation</h1>
+                    <h1 class="f25 f-md-30"> View Our Full Collection of Cyprus Hotels and Accommodation</h1>
                     <p class="f18 mt-3">Take a look at our collections of holiday types to help you decide on your
                         perfect Cyprus holiday, or alternatively, call one of our
                         expert holiday advisors who will be happy to help you choose. Please click the links below to
@@ -1341,30 +1519,30 @@
                 <div class="row clearfix bottom-tab-one py-4">
                     <div class="col-md-12">
                         <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
-                            <li class="nav-item col-3 text-center" role="presentation">
-                                <button class="nav-link active" id="pills-discover-cyprus-tab" data-bs-toggle="pill"
+                            <li class="nav-item col-md-6 col-lg-3 col-12 text-center mb-2" role="presentation">
+                                <button class="nav-link active w-100" id="pills-discover-cyprus-tab" data-bs-toggle="pill"
                                     data-bs-target="#discover-cyprus" type="button" role="tab"
                                     aria-controls="pills-discover-cyprus" aria-selected="true">Discover Cyprus
                                     <i class="fa fa-chevron-down"></i></button>
                             </li>
 
-                            <li class="nav-item col-3 text-center" role="presentation">
-                                <button class="nav-link" id="pills-kyrenia-tab" data-bs-toggle="pill"
+                            <li class="nav-item col-md-6 col-lg-3 col-12 text-center mb-2" role="presentation">
+                                <button class="nav-link w-100" id="pills-kyrenia-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-kyrenia" type="button" role="tab"
                                     aria-controls="pills-kyrenia" aria-selected="false">
                                     Hotels in Kyrenia
                                     <i class="fa fa-chevron-down"></i></button>
                             </li>
 
-                            <li class="nav-item col-3 text-center" role="presentation">
-                                <button class="nav-link" id="pills-famagusta-tab" data-bs-toggle="pill"
+                            <li class="nav-item col-md-6 col-lg-3 col-12 text-center mb-2" role="presentation">
+                                <button class="nav-link w-100" id="pills-famagusta-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-famagusta" type="button" role="tab"
                                     aria-controls="pills-famagusta" aria-selected="false">Hotels in Famagusta
                                     <i class="fa fa-chevron-down"></i></button>
                             </li>
 
-                            <li class="nav-item col-3 text-center" role="presentation">
-                                <button class="nav-link" id="pills-bafra-tab" data-bs-toggle="pill"
+                            <li class="nav-item col-md-6 col-lg-3 col-12 text-center mb-2" role="presentation">
+                                <button class="nav-link w-100" id="pills-bafra-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-bafra" type="button" role="tab" aria-controls="pills-bafra"
                                     aria-selected="false">Hotels in bafra
                                     <i class="fa fa-chevron-down"></i></button>
@@ -3634,13 +3812,13 @@
                         items: 1,
                         nav: true,
                         //arrows: true,
-                        navText: ["<i class='far fa-arrow-alt-circle-left'></i>", "<i class='far fa-arrow-alt-circle-right'></i>"],
+                        navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
                     },
                     600: {
                         items: 3,
                         nav: true,
                         //arrows: true,
-                        navText: ["<i class='far fa-arrow-alt-circle-left'></i>", "<i class='far fa-arrow-alt-circle-right'></i>"],
+                        navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
                     },
                     1000: {
                         items: 6,
