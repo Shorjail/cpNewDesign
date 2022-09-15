@@ -864,9 +864,7 @@ span.room_heading {
     border:1px solid #fff;
     border-radius: 20px;
 }
-#navbarContent li.nav-item {
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
+
 
 .mob-search-item-btn {
     border-radius: 0 30px 30px 0;
