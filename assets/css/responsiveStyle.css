@@ -81,6 +81,16 @@
         padding: 10px;
         
     }
+    .new-destinations img {
+        border-radius: 15px;
+    }
+    .new-destinations .primary-button{
+        font-size: 15px;
+    }
+    .cp-holiday-card-content h3,.cp-holiday-card-content h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
    
 
 }

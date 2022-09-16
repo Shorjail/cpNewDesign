@@ -526,12 +526,12 @@ padding: 12% 0;
     color: #87aeae;
 }
 
-.widget-9 .primary-button {
+.new-destinations .primary-button {
     line-height: 2;
     border-radius: 30px;
     font-size: 20px;
 }
-.widget-9 img {
+.new-destinations img {
     border-radius: 40px;
 }
 
@@ -904,8 +904,8 @@ span.room_heading {
 
 .holiday-pack .cyp_holidays_sec .owl-prev, .holiday-pack .cyp_holidays_sec .owl-next {
     top: 40%;
-    height: 60px;
-    background: rgba(255,255,255,0.7) !important;
+    height: 38px;
+    background: rgba(255,255,255,0.8) !important;
 }
 
 .holiday-pack .cyp_holidays_sec .owl-prev i, .holiday-pack .cyp_holidays_sec .owl-next i{
@@ -916,9 +916,9 @@ span.room_heading {
 }
 .holiday-pack .cyp_holidays_sec .owl-theme .owl-nav [class*='owl-'] {
 
-    padding: 13px 18px;
+    padding: 0px 10px;
     margin: 0;
-    border-radius: 15px;
+    border-radius: 7px;
 
 }
 .cyp_holidays_sec.no-card .owl-prev, .holiday-pack .cyp_holidays_sec.no-card .owl-next {
@@ -930,6 +930,9 @@ span.room_heading {
    
 }
 
+.fa-share-nodes {
+    color: var(--primary-color);
+}
 /* .quote-border:before {
     content: '';
     position: absolute;
@@ -938,6 +941,10 @@ span.room_heading {
     border-left: 80px solid red;
     width: 0;
 } */
+
+/* .owl-carousel {
+    touch-action:none;
+  } */
 @media only screen and (min-width: 1024px){
     .widget-3 .deals_content_box .deals_content_box_2 {
         padding-top: 16%;
