@@ -945,6 +945,20 @@ span.room_heading {
 /* .owl-carousel {
     touch-action:none;
   } */
+
+  /* splide slider customization Start */
+
+  .splide__pagination__page.is-active {
+    background: var(--primary-text-color) !important;
+  }
+  .splide__arrow {
+    background:#fff;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+  }
+
+   /* splide slider customization end */
 @media only screen and (min-width: 1024px){
     .widget-3 .deals_content_box .deals_content_box_2 {
         padding-top: 16%;
